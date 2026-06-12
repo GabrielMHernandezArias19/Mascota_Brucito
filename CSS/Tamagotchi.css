@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#dbeafe,#f5f5f5);
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    color: #1e3a8a;
+    margin: 20px 0 40px 0;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Caja de la mascota */
+#zonaMascota{
+    width: 500px;
+    height: 380px;
+
+    border: 5px solid #1e3a8a;
+    border-radius: 25px;
+
+    background-color: white;
+    background-image: url("../IMG/BRUCENormal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,.25);
+}
+
+/* Panel de estadísticas */
+#panel{
+    width: 300px;
+    background: #f7ebcf;
+    border: 3px solid #d6bd86;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #5b3415;
+}
+
+/* Objetos inferiores */
+#objetos{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+    padding: 18px 25px;
+    border-radius: 25px;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,.2);
+}
+
+/* Íconos */
+.objeto{
+    width: 65px;
+    height: 65px;
+
+    padding: 10px;
+    border-radius: 15px;
+    background: #eef2ff;
+
+    cursor: grab;
+    transition: 0.25s;
+}
+
+.objeto:hover{
+    transform: translateY(-6px) scale(1.1);
+    background: #dbeafe;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.2);
+}
+
+.objeto:active{
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+footer{
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+} 
+   

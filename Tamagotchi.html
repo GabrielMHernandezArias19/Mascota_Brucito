@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Brucitos</title>
+
+<link rel="stylesheet" href="CSS/Tamagotchi.css">
+
+</head>
+
+<body>
+
+<h1>Brucito Mi Hermoso</h1>
+
+<div id="contenedor">
+
+    <!-- AREA DE LA MASCOTA -->
+    <div id="zonaMascota"
+         ondrop="dropHandler(event)"
+         ondragover="dragoverHandler(event)">
+    </div>
+
+   <div id="panel">
+    <label> Hambre: <span id="lblPorcentajeHambre">50%</span></label>
+    <label>Sueño: <span id="lblPorcentajeSueno">50%</span></label>
+    <label> Salud: <span id="lblPorcentajeSalud">50%</span></label>
+    <label> Felicidad: <span id="lblPorcentajeFelicidad">50%</span></label>
+    <label> Higiene: <span id="lblPorcentajeHigiene">50%</span></label>
+    <label> Mundial: <span id="lblPorcentajeMundial">0%</span></label>
+</div>
+
+<!-- OBJETOS -->
+<div id="objetos">
+
+    <!-- COMER -->
+    <img
+        id="comida"
+        class="objeto"
+        src="IMG/MANZANAA.png"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+    >
+
+    <!-- DORMIR -->
+    <img
+        id="luna"
+        class="objeto"
+        src="IMG/LUNA.png"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+    >
+
+    <!-- JUGAR -->
+    <img
+        id="jugar"
+        class="objeto"
+        src="IMG/HUESO.png"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+    >
+
+    <!-- BAÑAR -->
+    <img
+        id="banar"
+        class="objeto"
+        src="IMG/PATO.png"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+    >
+
+    <!-- CURAR -->
+    <img
+        id="curar"
+        class="objeto"
+        src="IMG/SALUD.png"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+    >
+
+    <!-- COMPORTAMIENTO ESPECIAL -->
+    <!-- MUNDIAL -->
+<img
+    id="mundial"
+    class="objeto"
+    src="IMG/MUNDIAL1.png"
+    draggable="true"
+    ondragstart="dragstartHandler(event)"
+>
+
+  
+   
+
+</div>
+
+<script src="JS/Tamagotchi.js"></script>
+
+<footer>
+    HERNANDEZ Y CALDERON
+</footer>
+</body>
+</html>
