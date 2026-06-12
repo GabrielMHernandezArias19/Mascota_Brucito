@@ -123,12 +123,12 @@ function actualizarImagen(){
 
 setInterval(function(){
 
-    hambre -= 2;
-    sueno -= 2;
-    felicidad -= 2;
-    higiene -= 2;
-    salud -= 1;
-    mundial -= 2; // También baja
+    hambre -= 4;
+    sueno -= 4;
+    felicidad -= 4;
+    higiene -= 4;
+    salud -= 4;
+    mundial -= 4; // También baja
 
     actualizarTodo();
 
